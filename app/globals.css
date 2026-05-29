@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+/* ============================================================
+   DESIGN TOKENS — shadcn-style oklch variables.
+   Locked to the chosen palette: azure accent on charcoal.
+   ============================================================ */
+:root {
+  --accent: oklch(0.72 0.15 234);
+  --accent-dim: oklch(0.72 0.15 234 / 0.14);
+
+  --bg: oklch(0.205 0.006 275);
+  --bg-deep: oklch(0.175 0.006 275);
+  --surface: oklch(0.245 0.007 275);
+  --surface-2: oklch(0.285 0.008 275);
+  --border: oklch(0.345 0.008 275);
+  --fg: oklch(0.95 0.004 275);
+  --muted: oklch(0.68 0.008 275);
+  --faint: oklch(0.52 0.008 275);
+}
+
+/* ---- Map tokens into Tailwind's theme so utilities are generated ---- */
+@theme inline {
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-bg-deep: var(--bg-deep);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-accent: var(--accent);
+  --color-accent-dim: var(--accent-dim);
+
+  /* shadcn semantic aliases (so future `shadcn add` components theme correctly) */
+  --color-primary: var(--accent);
+  --color-primary-foreground: var(--bg-deep);
+  --color-input: var(--border);
+  --color-ring: var(--accent);
+  --color-card: var(--surface);
+
+  --font-mono: var(--font-ibm-plex-mono), ui-monospace, monospace;
+  --animate-avail-pulse: avail-pulse 2.2s ease-in-out infinite;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font-ibm-plex-mono), ui-monospace, monospace;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  ::selection {
+    background: var(--accent);
+    color: var(--bg-deep);
+  }
+}
+
+@keyframes avail-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* ---- Scroll fade-in reveal (class toggled by RevealObserver) ---- */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.7s cubic-bezier(0.2, 0.6, 0.2, 1),
+    transform 0.7s cubic-bezier(0.2, 0.6, 0.2, 1);
+}
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ============================================================
+   PRINT — clean one-page CV when someone hits Cmd+P.
+   Override the raw tokens; Tailwind utilities follow via @theme.
+   ============================================================ */
+@media print {
+  :root {
+    --bg: #fff;
+    --bg-deep: #fff;
+    --surface: #fff;
+    --surface-2: #f3f3f3;
+    --border: #cfcfcf;
+    --fg: #111;
+    --muted: #333;
+    --faint: #666;
+    --accent: #15558f;
+    --accent-dim: rgba(21, 85, 143, 0.08);
+  }
+  @page {
+    margin: 14mm;
+  }
+  html,
+  body {
+    background: #fff !important;
+    color: #111 !important;
+    font-size: 10.5pt;
+  }
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  a {
+    color: var(--fg) !important;
+  }
+}

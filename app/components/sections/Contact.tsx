@@ -1,0 +1,49 @@
+import { SITE } from "@/app/content";
+import { Button } from "@/components/ui/button";
+
+export default function Contact() {
+  return (
+    <section className="reveal py-20 print:py-[30px]" id="contact">
+      <h2 className="text-[clamp(30px,6vw,64px)] font-semibold tracking-[-0.03em] leading-[1.05] max-w-[760px] print:text-[22pt]">
+        Let&apos;s talk about something that needs to{" "}
+        <a
+          href={`mailto:${SITE.email}`}
+          className="text-accent border-b-2 border-transparent transition-colors duration-200 hover:border-accent"
+        >
+          hold up under load
+        </a>
+        .
+      </h2>
+      <p className="mt-[26px] max-w-[600px] text-[15px] leading-[1.7] text-muted">
+        I&apos;m open to{" "}
+        <b className="text-foreground font-semibold">
+          senior backend and fullstack roles
+        </b>
+        , remote or on-site around Łódź, and comfortable working in{" "}
+        <b className="text-foreground font-semibold">Polish</b> (native) or{" "}
+        <b className="text-foreground font-semibold">English</b> (C1). Email is
+        the quickest way to reach me, and I usually reply within a day or two.
+      </p>
+      <div className="flex flex-wrap gap-4 mt-11 print:hidden">
+        <Button asChild variant="solid">
+          <a href="/assets/Michal-Kubik-CV.pdf" download>
+            Download résumé (PDF)
+          </a>
+        </Button>
+        <Button asChild>
+          <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+        </Button>
+        <Button asChild>
+          <a href={SITE.github} target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </Button>
+        <Button asChild>
+          <a href={SITE.linkedin} target="_blank" rel="noopener">
+            LinkedIn
+          </a>
+        </Button>
+      </div>
+    </section>
+  );
+}
