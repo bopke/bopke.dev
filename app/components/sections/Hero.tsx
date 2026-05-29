@@ -10,16 +10,16 @@ export default function Hero() {
         Fullstack Engineer · Łódź, Poland
       </p>
       <h1 className="text-[clamp(46px,10vw,122px)] font-semibold leading-[0.95] tracking-[-0.04em] print:text-[40pt]">
-        Building
+        Systems
         <br />
-        for <em className="italic font-normal text-muted">scale.</em>
+        that <em className="italic font-normal text-muted">hold up.</em>
       </h1>
       <p className="mt-9 max-w-[620px] text-[clamp(15px,1.8vw,18px)] leading-[1.7] text-muted print:text-[12pt]">
         I&apos;m <b className="text-foreground font-semibold">Michał Kubik</b>, a
         fullstack engineer who spends most of his time in the backend. I build
         the APIs, data models and integrations that have to stay{" "}
         <b className="text-foreground font-semibold">
-          fast and cheap as things grow
+          fast, cheap and reliable as things grow
         </b>
         .
       </p>
