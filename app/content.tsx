@@ -24,7 +24,14 @@ export type Role = {
   tags?: string[];
 };
 
-export const roles: Role[] = [
+export type Group = {
+  group: string;
+  when: string;
+  blurb: string;
+  roles: Role[];
+};
+
+export const timeline: (Role | Group)[] = [
   {
     title: "Senior Fullstack Developer",
     company: "Widelab development sp. k.",
@@ -33,20 +40,25 @@ export const roles: Role[] = [
     tags: ["React", "NestJS", "TypeScript", "PostgreSQL", "Redis", "Lithic"],
   },
   {
-    title: "Senior Backend Developer",
-    company: "Yumzi GmbH",
-    contract: true,
-    when: "Jan 2026 - Apr 2026",
-    desc: "Yumzi turns a restaurant's dishes into professional, print-ready menus with AI. As it gained traction and its old backend buckled under load, I migrated it from Express/JS to NestJS/TypeScript (rewiring the React frontend onto the new API) and rebuilt it to handle thousands of daily users and hundreds of menus generated a day. I reworked the MongoDB schema and queries to cut database costs by over 60%, re-integrated its existing LLM features (AI menu generation and a support bot) into the new backend, and built automatic, context-aware menu translation with the same models (OpenAI, Anthropic, Grok). Stripe handled subscriptions, Cloudflare R2 stored menu images, and Workers managed uploads and offloaded heavier jobs from the main service.",
-    tags: ["NestJS", "MongoDB", "Cloudflare", "Stripe", "LLMs"],
-  },
-  {
-    title: "Backend Developer",
-    company: "ACE XR, LLC",
-    contract: true,
-    when: "Sep 2025 - Nov 2025",
-    desc: "Ace is a VR pistol-training platform on Meta Quest. Contracted to help migrate its backend off a low-code platform to NestJS after it outgrew the old stack and started to crumble. With tens of thousands of registered users and thousands of requests per minute at peak, the rebuild leaned heavily asynchronous, using SQS and S3 to pass events and data between services, and precomputing heavy read paths to clear the main PostgreSQL bottleneck. Handled Quest Store subscriptions and account auth through Meta, and transactional email over SES.",
-    tags: ["NestJS", "PostgreSQL", "AWS", "Meta"],
+    group: "Independent Contractor",
+    when: "Sep 2025 - Apr 2026",
+    blurb: "A deliberate stint freelancing, taking on work outside the usual.",
+    roles: [
+      {
+        title: "Senior Backend Developer",
+        company: "Yumzi GmbH",
+        when: "Jan 2026 - Apr 2026",
+        desc: "Yumzi turns a restaurant's dishes into professional, print-ready menus with AI. As it gained traction and its old backend buckled under load, I migrated it from Express/JS to NestJS/TypeScript (rewiring the React frontend onto the new API) and rebuilt it to handle thousands of daily users and hundreds of menus generated a day. I reworked the MongoDB schema and queries to cut database costs by over 60%, re-integrated its existing LLM features (AI menu generation and a support bot) into the new backend, and built automatic, context-aware menu translation with the same models (OpenAI, Anthropic, Grok). Stripe handled subscriptions, Cloudflare R2 stored menu images, and Workers managed uploads and offloaded heavier jobs from the main service.",
+        tags: ["NestJS", "MongoDB", "Cloudflare", "Stripe", "LLMs"],
+      },
+      {
+        title: "Backend Developer",
+        company: "ACE XR, LLC",
+        when: "Sep 2025 - Nov 2025",
+        desc: "Ace is a VR pistol-training platform on Meta Quest. Contracted to help migrate its backend off a low-code platform to NestJS after it outgrew the old stack and started to crumble. With tens of thousands of registered users and thousands of requests per minute at peak, the rebuild leaned heavily asynchronous, using SQS and S3 to pass events and data between services, and precomputing heavy read paths to clear the main PostgreSQL bottleneck. Handled Quest Store subscriptions and account auth through Meta, and transactional email over SES.",
+        tags: ["NestJS", "PostgreSQL", "AWS", "Meta"],
+      },
+    ],
   },
   {
     title: "Senior Developer / Tech Lead",

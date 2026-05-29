@@ -1,6 +1,7 @@
-import { roles } from "@/app/content";
+import { timeline } from "@/app/content";
 import { Section } from "@/app/components/Section";
 import RoleEntry from "@/app/components/RoleEntry";
+import ContractGroup from "@/app/components/ContractGroup";
 
 export default function Experience() {
   return (
@@ -11,9 +12,13 @@ export default function Experience() {
       sub="Over six years, mostly backend."
     >
       <div className="flex flex-col">
-        {roles.map((role) => (
-          <RoleEntry key={`${role.company}-${role.when}`} {...role} />
-        ))}
+        {timeline.map((entry) =>
+          "group" in entry ? (
+            <ContractGroup key={entry.group} {...entry} />
+          ) : (
+            <RoleEntry key={`${entry.company}-${entry.when}`} {...entry} />
+          )
+        )}
       </div>
     </Section>
   );
