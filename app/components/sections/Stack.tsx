@@ -5,7 +5,12 @@ import { Section } from "@/app/components/Section";
 
 export default function Stack() {
   return (
-    <Section id="stack" num="03 -" title="Stack" sub="What I work with, grouped.">
+    <Section
+      id="stack"
+      num="03 -"
+      title="Stack"
+      sub="Deep in a few, comfortable across many."
+    >
       <dl className="flex flex-col">
         {stack.map((row) => (
           <div
@@ -19,7 +24,9 @@ export default function Stack() {
               {row.items.map((item, i) => (
                 <Fragment key={item}>
                   {i > 0 && <span className="text-faint"> · </span>}
-                  <span className="text-muted">{item}</span>
+                  <span className={row.emphasis ? "text-foreground" : "text-muted"}>
+                    {item}
+                  </span>
                 </Fragment>
               ))}
             </dd>
