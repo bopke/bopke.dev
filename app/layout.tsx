@@ -1,21 +1,14 @@
 import type { Metadata, Viewport } from "next";
-import { IBM_Plex_Mono, JetBrains_Mono } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
+// The site's only typeface. 400 (+ italic) and 600 are the weights in use.
 const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600"],
   style: ["normal", "italic"],
   display: "swap",
   variable: "--font-ibm-plex-mono",
-});
-
-const jetBrainsMono = JetBrains_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700", "800"],
-  style: ["normal", "italic"],
-  display: "swap",
-  variable: "--font-jetbrains-mono",
 });
 
 const SITE_URL = "https://bopke.dev";
@@ -122,7 +115,7 @@ export default function RootLayout({
       lang="en"
       data-accent="azure"
       data-bg="charcoal"
-      className={`${ibmPlexMono.variable} ${jetBrainsMono.variable}`}
+      className={ibmPlexMono.variable}
     >
       <head>
         <script
