@@ -14,7 +14,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 const SITE_URL = "https://bopke.dev";
 const TITLE = "Michał Kubik - Fullstack Engineer";
 const DESCRIPTION =
-  "Michał Kubik - fullstack engineer fascinated by scale. Backend-leaning, six+ years across NestJS, Go, AWS and more. Open to senior backend and fullstack roles.";
+  "Michał Kubik - backend-leaning fullstack engineer who builds systems that hold up. Six+ years across NestJS, Go, AWS and more. Open to senior backend and fullstack roles.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: "website",
     title: TITLE,
     description:
-      "Fullstack engineer fascinated by scale. Backend-leaning, six+ years across NestJS, Go and AWS. Open to senior backend and fullstack roles.",
+      "Backend-leaning fullstack engineer who builds systems that hold up. Six+ years across NestJS, Go and AWS. Open to senior backend and fullstack roles.",
     url: "/",
     siteName: "Bopke.dev",
     locale: "en_US",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description:
-      "Fullstack engineer fascinated by scale. Open to senior backend and fullstack roles.",
+      "Backend-leaning fullstack engineer who builds systems that hold up. Open to senior backend and fullstack roles.",
     images: ["/assets/og-cover.png"],
   },
 };
@@ -75,7 +75,7 @@ const personJsonLd = {
   image: "https://bopke.dev/assets/og-cover.png",
   jobTitle: "Fullstack Engineer",
   description:
-    "Fullstack engineer fascinated by scale. Backend-leaning, with over six years across NestJS, Go, AWS and more.",
+    "Backend-leaning fullstack engineer who builds systems that hold up, with over six years across NestJS, Go, AWS and more.",
   email: "contact@bopke.dev",
   address: {
     "@type": "PostalAddress",

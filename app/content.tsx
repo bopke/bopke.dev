@@ -37,7 +37,7 @@ export const roles: Role[] = [
     company: "Yumzi GmbH",
     contract: true,
     when: "Jan 2026 - Apr 2026",
-    desc: "Migrated a backend from Express/JS to NestJS/TypeScript and moved the React frontend onto it. Reworked the MongoDB schema and queries to cut database costs by 3x, shipped a menu-management API, and connected the product to OpenAI, Anthropic, Grok, Stripe and Cloudflare R2 / Workers.",
+    desc: "Migrated a backend from Express/JS to NestJS/TypeScript and moved the React frontend onto it. Reworked the MongoDB schema and queries to cut database costs by over 60%, shipped a menu-management API, and connected the product to OpenAI, Anthropic, Grok, Stripe and Cloudflare R2 / Workers.",
     tags: ["NestJS", "MongoDB", "Cloudflare", "Stripe", "LLMs"],
   },
   {
@@ -45,7 +45,7 @@ export const roles: Role[] = [
     company: "ACE XR, LLC",
     contract: true,
     when: "Sep 2025 - Nov 2025",
-    desc: "Built the NestJS backend for a VR game, handling accounts and scorekeeping. Fixed real performance problems in complex PostgreSQL queries, running on AWS SQS/S3/SES with Meta payment & subscription integration.",
+    desc: "Built the NestJS backend for a VR game, handling accounts and scorekeeping. Resolved the main PostgreSQL performance bottleneck by moving a heavy aggregation behind a periodically refreshed materialized view. Ran on AWS SQS/S3/SES with Meta payment & subscription integration.",
     tags: ["NestJS", "PostgreSQL", "AWS", "Meta"],
   },
   {

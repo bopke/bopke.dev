@@ -17,9 +17,10 @@ export default function About() {
           Most of my work is on the <b className={strong}>backend</b>: services,
           schemas, queues, and the integrations that hold everything together. I
           like the parts nobody sees:{" "}
-          <b className={strong}>the query that ended up 3x cheaper</b>, the
-          migration that didn&apos;t lose a row, the pipeline that catches a bug
-          before it ships. I also have a soft spot for VR.
+          <b className={strong}>the rewrite that cut a database bill by over
+          60%</b>, the heavy aggregation I moved behind a materialized view, the
+          pipeline that catches a bug before it ships. I also have a soft spot
+          for VR.
         </p>
         <p className={para}>
           It&apos;s not all backend, though. I&apos;ve worked on the frontend
