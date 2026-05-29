@@ -2,6 +2,9 @@
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "bopke-dev",
   "compatibility_date": "2026-05-29",
-  // Static site built by `next build` (output: "export") lands in ./out
-  "pages_build_output_dir": "out"
+  // Static site built by `next build` (output: "export") into ./out, served
+  // directly as Worker Static Assets — there is no server code (no `main`).
+  "assets": {
+    "directory": "./out"
+  }
 }
