@@ -14,7 +14,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 const SITE_URL = "https://bopke.dev";
 const TITLE = "Michał Kubik - Fullstack Engineer";
 const DESCRIPTION =
-  "Michał Kubik - backend-leaning fullstack engineer who builds systems that hold up. Six+ years across NestJS, Go, AWS and more. Open to senior backend and fullstack roles.";
+  "Michał Kubik - backend-leaning fullstack engineer who builds systems that hold up. Six+ years across NestJS, Go, AWS and more. Open to backend and fullstack roles.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     type: "website",
     title: TITLE,
     description:
-      "Backend-leaning fullstack engineer who builds systems that hold up. Six+ years across NestJS, Go and AWS. Open to senior backend and fullstack roles.",
+      "Backend-leaning fullstack engineer who builds systems that hold up. Six+ years across NestJS, Go and AWS. Open to backend and fullstack roles.",
     url: "/",
     siteName: "Bopke.dev",
     locale: "en_US",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: TITLE,
     description:
-      "Backend-leaning fullstack engineer who builds systems that hold up. Open to senior backend and fullstack roles.",
+      "Backend-leaning fullstack engineer who builds systems that hold up. Open to backend and fullstack roles.",
     images: ["/assets/og-cover.png"],
   },
 };

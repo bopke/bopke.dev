@@ -9,7 +9,7 @@ export default function Experience() {
       id="experience"
       num="02 -"
       title="Selected Work"
-      sub="Over six years, mostly backend."
+      sub="Delivering great software since 2019."
     >
       <div className="flex flex-col">
         {timeline.map((entry) =>

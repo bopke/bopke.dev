@@ -5,19 +5,13 @@ export default function Contact() {
   return (
     <section className="reveal py-20 print:py-[30px]" id="contact">
       <h2 className="text-[clamp(30px,6vw,64px)] font-semibold tracking-[-0.03em] leading-[1.05] max-w-[760px] print:text-[22pt]">
-        Let&apos;s talk about something that needs to{" "}
-        <a
-          href={`mailto:${SITE.email}`}
-          className="text-accent border-b-2 border-transparent transition-colors duration-200 hover:border-accent"
-        >
-          hold up under load
-        </a>
-        .
+        Let&apos;s talk about something{" "}
+        <span className="text-accent">worth building</span>.
       </h2>
       <p className="mt-[26px] max-w-[600px] text-[15px] leading-[1.7] text-muted">
         I&apos;m open to{" "}
         <b className="text-foreground font-semibold">
-          senior backend and fullstack roles
+          backend and fullstack roles
         </b>
         , remote or on-site around Łódź, and comfortable working in{" "}
         <b className="text-foreground font-semibold">Polish</b> (native) or{" "}

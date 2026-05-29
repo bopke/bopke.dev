@@ -36,7 +36,7 @@ export const timeline: (Role | Group)[] = [
     title: "Senior Fullstack Developer",
     company: "Widelab development sp. k.",
     when: "Jan 2026 - now",
-    desc: "Building a new platform that gives campaigning organizations fine-grained control over ad spend: budgets and live spend tracking at every level, from the whole campaign down to each agency and individual agent, with debit cards issued through Lithic. Working across the stack: NestJS, PostgreSQL and Redis on the backend, React (Vite, shadcn/ui) on the front.",
+    desc: "Building a new platform that gives campaigning organizations fine-grained control over ad spend: budgets and live spend tracking at every level, from the whole campaign down to each agency and individual agent, with debit cards issued through Lithic. Working across the stack: NestJS, PostgreSQL and Redis on the backend, React (Vite, shadcn/ui) on the front, with Sentry and Grafana/Prometheus for observability.",
     tags: ["React", "NestJS", "TypeScript", "PostgreSQL", "Redis", "Lithic"],
   },
   {
@@ -48,7 +48,7 @@ export const timeline: (Role | Group)[] = [
         title: "Senior Backend Developer",
         company: "Yumzi GmbH",
         when: "Jan 2026 - Apr 2026",
-        desc: "Yumzi turns a restaurant's dishes into professional, print-ready menus with AI. As it gained traction and its old backend buckled under load, I migrated it from Express/JS to NestJS/TypeScript (rewiring the React frontend onto the new API) and rebuilt it to handle thousands of daily users and hundreds of menus generated a day. I reworked the MongoDB schema and queries to cut database costs by over 60%, re-integrated its existing LLM features (AI menu generation and a support bot) into the new backend, and built automatic, context-aware menu translation with the same models (OpenAI, Anthropic, Grok). Stripe handled subscriptions, Cloudflare R2 stored menu images, and Workers managed uploads and offloaded heavier jobs from the main service.",
+        desc: "Yumzi turns a restaurant's dishes into professional, print-ready menus with AI. As it gained traction and its old backend buckled under load, I migrated it from Express/JS to NestJS/TypeScript (rewiring the React frontend onto the new API) and rebuilt it to handle thousands of daily users and hundreds of menus generated a day. I reworked the MongoDB schema and queries to cut database costs by over 60%, re-integrated its existing LLM features (AI menu generation and a support bot) into the new backend, and built automatic, context-aware menu translation with the same models (OpenAI, Anthropic, Grok). Stripe handled subscriptions, Cloudflare R2 stored menu images, and Workers managed uploads and offloaded heavier jobs from the main service. I set up its CI/CD pipeline and Sentry monitoring, and operated it in production.",
         tags: ["NestJS", "MongoDB", "Cloudflare", "Stripe", "LLMs"],
       },
       {
@@ -64,7 +64,7 @@ export const timeline: (Role | Group)[] = [
     title: "Senior Developer / Tech Lead",
     company: "HTD Polska Sp. z o.o.",
     when: "Nov 2021 - Aug 2025",
-    desc: "Four years at a medtech agency serving the US healthcare market, where I joined as a mid developer and worked my way up to tech lead. I started on ZUS Health, handling HL7/FHIR data in Go, then moved to its GraphQL service in TypeScript when the client pivoted. Later, as a senior fullstack dev, I shipped a React Native and Serverless health app that turned Apple Watch and Fitbit heart-rate data into detailed reports for physicians, and drove its ISO 13485 certification. I finished as tech lead of a four-engineer team building a React/NestJS app that helps insured patients find in-network care nearby; within a month of launch it had a few thousand monthly users and had replaced a costly call-center process. All of it HIPAA-regulated patient data, on AWS with Docker and Terraform.",
+    desc: "Four years at a medtech agency serving the US healthcare market, where I joined as a mid developer and worked my way up to tech lead. I started on ZUS Health, handling HL7/FHIR data in Go, then moved to its GraphQL service in TypeScript when the client pivoted. Later, as a senior fullstack dev, I shipped a React Native and Serverless health app that turned Apple Watch and Fitbit heart-rate data into detailed reports for physicians, and contributed to its ISO 13485 certification. I finished as tech lead of four experienced engineers, owning the technical direction and scoping work directly with the client, on a React/NestJS app that helps insured patients find in-network care nearby; within a month of launch it had a few thousand monthly users and had replaced a costly call-center process. All of it HIPAA-regulated patient data on AWS (Docker, Terraform, CI/CD), monitored with CloudWatch and Grafana; as tech lead I carried the on-call pager and was accountable for uptime.",
     tags: ["Go", "TypeScript", "NestJS", "React", "React Native", "FHIR/HL7", "HIPAA", "ISO 13485"],
   },
   {
@@ -116,6 +116,10 @@ export const stack: { label: string; items: string[]; emphasis?: boolean }[] = [
       "Docker",
       "Terraform",
       "GitHub Actions",
+      "Sentry",
+      "Grafana",
+      "Prometheus",
+      "CloudWatch",
     ],
   },
   { label: "Domains", items: ["FHIR / HL7", "HIPAA", "Fintech", "Medtech"] },

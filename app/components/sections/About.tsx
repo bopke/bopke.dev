@@ -19,8 +19,7 @@ export default function About() {
           like the parts nobody sees:{" "}
           <b className={strong}>the rewrite that cut a database bill by over
           60%</b>, the heavy aggregation I moved behind a materialized view, the
-          pipeline that catches a bug before it ships. I also have a soft spot
-          for VR.
+          pipeline that catches a bug before it ships.
         </p>
         <p className={para}>
           It&apos;s not all backend, though. I&apos;ve worked on the frontend
