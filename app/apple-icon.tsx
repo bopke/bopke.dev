@@ -1,6 +1,7 @@
 import { ImageResponse } from "next/og";
 
 // Apple touch icon (iOS home-screen / bookmarks), generated to match favicon.svg.
+export const dynamic = "force-static";
 export const size = { width: 180, height: 180 };
 export const contentType = "image/png";
 
