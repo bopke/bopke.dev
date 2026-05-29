@@ -42,20 +42,20 @@ export const timeline: (Role | Group)[] = [
   {
     group: "Independent Contractor",
     when: "Sep 2025 - Apr 2026",
-    blurb: "A deliberate stint freelancing, taking on work outside the usual.",
+    blurb: "A deliberate stint freelancing, taking on work outside my usual lane.",
     roles: [
       {
         title: "Backend Developer",
         company: "Yumzi GmbH",
         when: "Jan 2026 - Apr 2026",
-        desc: "Yumzi turns a restaurant's dishes into professional, print-ready menus with AI. As it gained traction, its quickly-built Express/JS backend started hitting its limits, so I migrated it to NestJS/TypeScript (rewiring the React frontend onto the new API) and rebuilt it for its thousands of daily users and hundreds of menus generated a day. I reworked the MongoDB schema and queries to cut database costs by over 60%, re-integrated its existing LLM features (AI menu generation and a support bot) into the new backend, and built automatic, context-aware menu translation with the same models (OpenAI, Anthropic, Grok). Stripe handled subscriptions, Cloudflare R2 stored menu images, and Workers managed uploads and offloaded heavier jobs from the main service. I set up its CI/CD pipeline and Sentry monitoring, and operated it in production.",
+        desc: "Yumzi turns a restaurant's dishes into professional, print-ready menus with AI. As it gained traction, its quickly built Express/JS backend started hitting its limits, so I migrated it to NestJS/TypeScript (rewiring the React frontend onto the new API) and rebuilt it for its thousands of daily users and hundreds of menus generated a day. I reworked the MongoDB schema and queries to cut database costs by over 60%, re-integrated its existing LLM features (AI menu generation and a support bot) into the new backend, and built automatic, context-aware menu translation with the same models (OpenAI, Anthropic, Grok). Stripe handled subscriptions, Cloudflare R2 stored menu images, and Workers managed uploads and offloaded heavier jobs from the main service. I set up its CI/CD pipeline and Sentry monitoring, and operated it in production.",
         tags: ["NestJS", "MongoDB", "Cloudflare", "Stripe", "LLMs"],
       },
       {
         title: "Backend Developer",
         company: "ACE XR, LLC",
         when: "Sep 2025 - Nov 2025",
-        desc: "Ace is a VR pistol-training platform on Meta Quest. Contracted to help migrate its backend off a low-code platform to NestJS after it outgrew the old stack and started to crumble. With tens of thousands of registered users and thousands of requests per minute at peak, the rebuild leaned heavily asynchronous, using SQS and S3 to pass events and data between services, and precomputing heavy read paths to clear the main PostgreSQL bottleneck. Handled Quest Store subscriptions and account auth through Meta, and transactional email over SES.",
+        desc: "Ace is a VR pistol-training platform on Meta Quest. Contracted to help their team migrate its backend off a low-code platform to NestJS after it outgrew the old stack and started to crumble. With tens of thousands of registered users and thousands of requests per minute at peak, the rebuild leaned heavily on asynchronous processing, using SQS and S3 to pass events and data between services, and precomputing heavy read paths to clear the main PostgreSQL bottleneck. I handled Quest Store subscriptions and account auth through Meta, plus transactional email over SES.",
         tags: ["NestJS", "PostgreSQL", "AWS", "Meta"],
       },
     ],
@@ -64,14 +64,14 @@ export const timeline: (Role | Group)[] = [
     title: "Senior Developer / Tech Lead",
     company: "HTD Polska Sp. z o.o.",
     when: "Nov 2021 - Aug 2025",
-    desc: "Four years at a medtech agency serving the US healthcare market, where I joined as a mid developer and worked my way up to tech lead. I started on ZUS Health, handling HL7/FHIR data in Go, then moved to its GraphQL service in TypeScript when the client pivoted. Later, as a senior fullstack dev, I shipped a React Native and Serverless health app that turned Apple Watch and Fitbit heart-rate data into detailed reports for physicians, and contributed to its ISO 13485 certification. I finished as tech lead of four experienced engineers, owning the technical direction and scoping work directly with the client, on a React/NestJS app that helps insured patients find in-network care nearby; within a month of launch it had a few thousand monthly users and had replaced a costly call-center process. All of it HIPAA-regulated patient data on AWS (Docker, Terraform, CI/CD), monitored with CloudWatch and Grafana; as tech lead I carried the on-call pager and was accountable for uptime.",
+    desc: "Nearly four years at a medtech agency serving the US healthcare market, where I joined as a mid-level developer and worked my way up to tech lead. I started on ZUS Health, handling HL7/FHIR data in Go, then moved to its GraphQL service in TypeScript when the client pivoted. Later, as a senior fullstack dev, I shipped a React Native and Serverless health app that turned Apple Watch and Fitbit heart-rate data into detailed reports for physicians, and contributed to its ISO 13485 certification. I finished as tech lead of four experienced engineers, owning the technical direction and scoping work directly with the client, on a React/NestJS app that helps insured patients find in-network care nearby; within a month of launch it had a few thousand monthly users and had replaced a costly call-center process. All of it HIPAA-regulated patient data on AWS (Docker, Terraform, CI/CD), monitored with CloudWatch and Grafana; as tech lead I carried the on-call pager and was accountable for uptime.",
     tags: ["Go", "TypeScript", "NestJS", "React", "React Native", "FHIR/HL7", "HIPAA", "ISO 13485"],
   },
   {
     title: "Developer / Sysadmin",
     company: "Smart Soft Solutions",
     when: "Jul 2020 - Dec 2021",
-    desc: "Split time between Linux server administration and application work in C, Python, JavaScript and Go, against MySQL, Postgres, Elasticsearch and Redis. The highlight was a COVID-era hardware project: as one of the firmware developers on a Raspberry Pi device that gated building entry behind a temperature check and hand disinfection, I wrote C for the heavy computation and Python for the rest of the app.",
+    desc: "I split my time between Linux server administration and application work in C, Python, JavaScript and Go, against MySQL, PostgreSQL, Elasticsearch and Redis. The highlight was a COVID-era hardware project: as one of the firmware developers on a Raspberry Pi device that gated building entry behind a temperature check and hand disinfection, I wrote C for the heavy computation and Python for the rest of the app.",
     tags: ["C", "Python", "Firmware", "Raspberry Pi", "Linux"],
   },
   {
@@ -122,7 +122,7 @@ export const stack: { label: string; items: string[]; emphasis?: boolean }[] = [
       "CloudWatch",
     ],
   },
-  { label: "Domains", items: ["FHIR / HL7", "HIPAA", "Fintech", "Medtech"] },
+  { label: "Domains", items: ["FHIR/HL7", "HIPAA", "Fintech", "Medtech"] },
 ];
 
 export type Project = {

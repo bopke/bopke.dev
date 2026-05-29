@@ -9,7 +9,7 @@ export default function Contact() {
         <span className="text-accent">worth building</span>.
       </h2>
       <p className="mt-[26px] max-w-[600px] text-[15px] leading-[1.7] text-muted">
-        I&apos;m not actively looking, but I&apos;m open to the right{" "}
+        I&apos;m open to the right{" "}
         <b className="text-foreground font-semibold">
           backend or fullstack role
         </b>
