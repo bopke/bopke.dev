@@ -44,6 +44,11 @@ export default function Contact() {
           </a>
         </Button>
       </div>
+      <div className="hidden print:block mt-8 text-sm text-muted leading-[1.9]">
+        <div>Email - {SITE.email}</div>
+        <div>GitHub - github.com/bopke</div>
+        <div>LinkedIn - linkedin.com/in/michał-kubik-420170161</div>
+      </div>
     </section>
   );
 }

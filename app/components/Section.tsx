@@ -4,8 +4,9 @@ import type { ReactNode } from "react";
 export const WRAP = "max-w-[1080px] mx-auto px-10 max-[760px]:px-6";
 
 const SECTION =
-  "reveal grid grid-cols-[200px_1fr] gap-10 py-[70px] border-b border-border max-[760px]:grid-cols-1 max-[760px]:gap-6 print:grid-cols-[170px_1fr] print:py-[26px] print:break-inside-avoid";
-const HEAD = "sticky top-[30px] self-start max-[760px]:static print:static";
+  "print-section reveal grid grid-cols-[200px_1fr] gap-10 py-[70px] border-b border-border max-[760px]:grid-cols-1 max-[760px]:gap-6 print:py-[26px]";
+const HEAD =
+  "section-head sticky top-[30px] self-start max-[760px]:static print:static";
 
 /** A numbered editorial section: sticky head column + body. */
 export function Section({

@@ -119,6 +119,14 @@
     opacity: 1 !important;
     transform: none !important;
   }
+  /* CSS Grid does not fragment correctly across print page breaks */
+  .print-section {
+    display: block !important;
+  }
+  .section-head {
+    position: static !important;
+    margin-bottom: 12px;
+  }
   a {
     color: var(--fg) !important;
   }
