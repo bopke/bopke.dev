@@ -39,7 +39,7 @@ export default function CookieNotice() {
         "py-[18px] px-5 bg-surface border border-border rounded",
         "shadow-[0_18px_50px_-22px_rgba(0,0,0,0.75)]",
         "transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.2,0.7,0.2,1)]",
-        "max-[640px]:left-3 max-[640px]:right-3 max-[640px]:max-w-none max-[640px]:bottom-[84px]",
+        "max-[640px]:left-3 max-[640px]:right-3 max-[640px]:max-w-none",
         "print:hidden",
         show ? "translate-y-0 opacity-100" : "translate-y-[140%] opacity-0"
       )}
