@@ -26,7 +26,7 @@ export default function RoleEntry({
           )}
         </div>
       </div>
-      <div className="text-[12.5px] text-faint text-right whitespace-nowrap max-[760px]:text-left">
+      <div className="text-[12.5px] text-faint text-right whitespace-nowrap max-[760px]:text-left max-[760px]:whitespace-normal">
         {when}
       </div>
       <p className="col-span-full text-sm text-muted leading-[1.7] mt-3 max-w-[640px]">

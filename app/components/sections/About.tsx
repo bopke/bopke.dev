@@ -15,7 +15,7 @@ export default function About() {
         </p>
         <p className={para}>
           Most of my work is on the <b className={strong}>backend</b>: services,
-          schemas, queues, and the integrations that hold everything together. I
+          schemas, queues and the integrations that hold everything together. I
           like the parts nobody sees:{" "}
           the heavy aggregation I moved behind a materialized view, and the
           pipeline that catches a bug before it ships.

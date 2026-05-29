@@ -36,7 +36,7 @@ export const timeline: (Role | Group)[] = [
     title: "Senior Fullstack Developer",
     company: "Widelab Development sp. k.",
     when: "Jan 2026 - now",
-    desc: "Started part-time in January 2026 alongside my last freelance contract, then full-time from April. Building a new platform that gives campaigning organizations fine-grained control over ad spend: budgets and live spend tracking at every level, from the whole campaign down to each agency and individual agent, with debit cards issued through Lithic. Working across the stack: NestJS, PostgreSQL and Redis on the backend, React (Vite, shadcn/ui) on the front, with Sentry and Grafana/Prometheus for observability.",
+    desc: "Building a new platform that gives campaigning organizations fine-grained control over ad spend: budgets and live spend tracking at every level, from the whole campaign down to each agency and individual agent, with debit cards issued through Lithic. Working across the stack: NestJS, PostgreSQL and Redis on the backend, React (Vite, shadcn/ui) on the front, with Sentry and Grafana/Prometheus for observability.",
     tags: ["React", "NestJS", "TypeScript", "PostgreSQL", "Redis", "Lithic"],
   },
   {
@@ -47,15 +47,15 @@ export const timeline: (Role | Group)[] = [
       {
         title: "Backend Developer",
         company: "Yumzi GmbH",
-        when: "Jan 2026 - Apr 2026",
-        desc: "Yumzi turns a restaurant's dishes into professional, print-ready menus with AI. As it gained traction, its quickly built Express/JS backend started hitting its limits, so I migrated it to NestJS/TypeScript (rewiring the React frontend onto the new API) and rebuilt it for its thousands of daily users and hundreds of menus generated a day. I reworked the MongoDB schema and queries to cut database costs by over 60%, re-integrated its existing LLM features (AI menu generation and a support bot) into the new backend, and built automatic, context-aware menu translation with the same models (OpenAI, Anthropic, Grok). Stripe handled subscriptions, Cloudflare R2 stored menu images, and Workers managed uploads and offloaded heavier jobs from the main service. I set up its CI/CD pipeline and Sentry monitoring, and operated it in production.",
+        when: "Jan 2026 - Apr 2026 (part time)",
+        desc: "Yumzi turns a restaurant's dishes into professional, print-ready menus with AI. As it gained traction, its quickly built Express/JS backend started hitting its limits, so I migrated it to NestJS/TypeScript (rewiring the React frontend onto the new API) and rebuilt it for its thousands of daily users and the hundreds of menus they generate each day. I reworked the MongoDB schema and queries to cut database costs by over 60%, re-integrated its existing LLM features (AI menu generation and a support bot) into the new backend, and built automatic, context-aware menu translation with the same models (OpenAI, Anthropic, Grok). Stripe handled subscriptions, Cloudflare R2 stored menu images, and Workers managed uploads and offloaded heavier jobs from the main service. I set up its CI/CD pipeline and Sentry monitoring, and operated it in production.",
         tags: ["NestJS", "MongoDB", "Cloudflare", "Stripe", "LLMs"],
       },
       {
         title: "Backend Developer",
         company: "ACE XR, LLC",
         when: "Sep 2025 - Nov 2025",
-        desc: "Ace is a VR pistol-training platform on Meta Quest. Contracted to help their team migrate its backend off a low-code platform to NestJS after it outgrew the old stack. With tens of thousands of registered users and thousands of requests per minute at peak, the rebuild leaned heavily on asynchronous processing, using SQS and S3 to pass events and data between services, and precomputing heavy read paths to clear the main PostgreSQL bottleneck. I handled Quest Store subscriptions and account auth through Meta, plus transactional email over SES.",
+        desc: "Ace is a VR pistol-training platform on Meta Quest. I was contracted to help their team migrate the backend off a low-code platform to NestJS after it outgrew the old stack. With tens of thousands of registered users and thousands of requests per minute at peak, the rebuild leaned heavily on asynchronous processing, using SQS and S3 to pass events and data between services, and precomputing heavy read paths to clear the main PostgreSQL bottleneck. I handled Quest Store subscriptions and account auth through Meta, plus transactional email over SES.",
         tags: ["NestJS", "PostgreSQL", "AWS", "Meta"],
       },
     ],
