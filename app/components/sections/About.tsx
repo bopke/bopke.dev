@@ -19,8 +19,7 @@ export default function About() {
           like the parts nobody sees:{" "}
           <b className={strong}>the query that ended up 3x cheaper</b>, the
           migration that didn&apos;t lose a row, the pipeline that catches a bug
-          before it ships. I lean toward low-level work, and I have a soft spot
-          for VR.
+          before it ships. I also have a soft spot for VR.
         </p>
         <p className={para}>
           It&apos;s not all backend, though. I&apos;ve worked on the frontend
