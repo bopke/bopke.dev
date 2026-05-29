@@ -17,11 +17,15 @@ export default function Hero() {
       <p className="mt-9 max-w-[620px] text-[clamp(15px,1.8vw,18px)] leading-[1.7] text-muted print:text-[12pt]">
         I&apos;m <b className="text-foreground font-semibold">Michał Kubik</b>, a
         fullstack engineer who spends most of his time in the backend. I build
-        the APIs, data models and integrations that have to stay{" "}
+        the APIs, data models and integrations behind{" "}
         <b className="text-foreground font-semibold">
-          fast, cheap and reliable as things grow
-        </b>
-        .
+          HIPAA healthcare and fintech
+        </b>{" "}
+        products, the kind that have to stay fast, cheap and reliable as they
+        grow. Lately that&apos;s meant cutting one product&apos;s database bill by{" "}
+        <b className="text-foreground font-semibold">over 60%</b> and helping
+        rebuild another to handle{" "}
+        <b className="text-foreground font-semibold">tens of thousands of users</b>.
       </p>
       <div className="mt-10 flex flex-wrap gap-y-2 gap-x-7 text-[12.5px] text-faint">
         <a href={SITE.github} target="_blank" rel="noopener" className={infoLink}>

@@ -35,7 +35,7 @@ export default function CookieNotice() {
       role="dialog"
       aria-label="Lack of cookies notice"
       className={cn(
-        "fixed z-[80] bottom-[18px] left-[18px] max-w-[430px] flex flex-col gap-[14px]",
+        "fixed z-[80] bottom-[18px] right-[18px] max-w-[430px] flex flex-col gap-[14px]",
         "py-[18px] px-5 bg-surface border border-border rounded",
         "shadow-[0_18px_50px_-22px_rgba(0,0,0,0.75)]",
         "transition-[transform,opacity] duration-500 ease-[cubic-bezier(0.2,0.7,0.2,1)]",

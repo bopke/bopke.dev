@@ -34,7 +34,7 @@ export type Group = {
 export const timeline: (Role | Group)[] = [
   {
     title: "Senior Fullstack Developer",
-    company: "Widelab development sp. k.",
+    company: "Widelab Development sp. k.",
     when: "Jan 2026 - now",
     desc: "Building a new platform that gives campaigning organizations fine-grained control over ad spend: budgets and live spend tracking at every level, from the whole campaign down to each agency and individual agent, with debit cards issued through Lithic. Working across the stack: NestJS, PostgreSQL and Redis on the backend, React (Vite, shadcn/ui) on the front, with Sentry and Grafana/Prometheus for observability.",
     tags: ["React", "NestJS", "TypeScript", "PostgreSQL", "Redis", "Lithic"],
@@ -71,7 +71,7 @@ export const timeline: (Role | Group)[] = [
     title: "Developer / Sysadmin",
     company: "Smart Soft Solutions",
     when: "Jul 2020 - Dec 2021",
-    desc: "I split my time between Linux server administration and application work in C, Python, JavaScript and Go, against MySQL, PostgreSQL, Elasticsearch and Redis. The highlight was a COVID-era hardware project: as one of the firmware developers on a Raspberry Pi device that gated building entry behind a temperature check and hand disinfection, I wrote C for the heavy computation and Python for the rest of the app.",
+    desc: "I split my time between Linux server administration and application work in C, Python, JavaScript and Go, backed by MySQL, PostgreSQL, Elasticsearch and Redis. The highlight was a COVID-era hardware project: as one of the firmware developers on a Raspberry Pi device that gated building entry behind a temperature check and hand sanitizing, I wrote C for the heavy computation and Python for the rest of the app.",
     tags: ["C", "Python", "Firmware", "Raspberry Pi", "Linux"],
   },
   {
@@ -107,7 +107,6 @@ export const stack: { label: string; items: string[]; emphasis?: boolean }[] = [
       "Express",
       "Serverless",
       "React Native",
-      "jQuery",
       "MongoDB",
       "DynamoDB",
       "Elasticsearch",
