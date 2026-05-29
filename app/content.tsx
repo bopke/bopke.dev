@@ -36,13 +36,13 @@ export const timeline: (Role | Group)[] = [
     title: "Senior Fullstack Developer",
     company: "Widelab Development sp. k.",
     when: "Jan 2026 - now",
-    desc: "Building a new platform that gives campaigning organizations fine-grained control over ad spend: budgets and live spend tracking at every level, from the whole campaign down to each agency and individual agent, with debit cards issued through Lithic. Working across the stack: NestJS, PostgreSQL and Redis on the backend, React (Vite, shadcn/ui) on the front, with Sentry and Grafana/Prometheus for observability.",
+    desc: "Started part-time in January 2026 alongside my last freelance contract, then full-time from April. Building a new platform that gives campaigning organizations fine-grained control over ad spend: budgets and live spend tracking at every level, from the whole campaign down to each agency and individual agent, with debit cards issued through Lithic. Working across the stack: NestJS, PostgreSQL and Redis on the backend, React (Vite, shadcn/ui) on the front, with Sentry and Grafana/Prometheus for observability.",
     tags: ["React", "NestJS", "TypeScript", "PostgreSQL", "Redis", "Lithic"],
   },
   {
     group: "Independent Contractor",
     when: "Sep 2025 - Apr 2026",
-    blurb: "A deliberate stint freelancing, taking on work outside my usual lane.",
+    blurb: "A deliberate stint freelancing, taking on work outside my usual lane, winding down as I moved into Widelab.",
     roles: [
       {
         title: "Backend Developer",
@@ -55,7 +55,7 @@ export const timeline: (Role | Group)[] = [
         title: "Backend Developer",
         company: "ACE XR, LLC",
         when: "Sep 2025 - Nov 2025",
-        desc: "Ace is a VR pistol-training platform on Meta Quest. Contracted to help their team migrate its backend off a low-code platform to NestJS after it outgrew the old stack and started to crumble. With tens of thousands of registered users and thousands of requests per minute at peak, the rebuild leaned heavily on asynchronous processing, using SQS and S3 to pass events and data between services, and precomputing heavy read paths to clear the main PostgreSQL bottleneck. I handled Quest Store subscriptions and account auth through Meta, plus transactional email over SES.",
+        desc: "Ace is a VR pistol-training platform on Meta Quest. Contracted to help their team migrate its backend off a low-code platform to NestJS after it outgrew the old stack. With tens of thousands of registered users and thousands of requests per minute at peak, the rebuild leaned heavily on asynchronous processing, using SQS and S3 to pass events and data between services, and precomputing heavy read paths to clear the main PostgreSQL bottleneck. I handled Quest Store subscriptions and account auth through Meta, plus transactional email over SES.",
         tags: ["NestJS", "PostgreSQL", "AWS", "Meta"],
       },
     ],
@@ -64,7 +64,7 @@ export const timeline: (Role | Group)[] = [
     title: "Senior Developer / Tech Lead",
     company: "HTD Polska Sp. z o.o.",
     when: "Nov 2021 - Aug 2025",
-    desc: "Nearly four years at a medtech agency serving the US healthcare market, where I joined as a mid-level developer and worked my way up to tech lead. I started on ZUS Health, handling HL7/FHIR data in Go, then moved to its GraphQL service in TypeScript when the client pivoted. Later, as a senior fullstack dev, I shipped a React Native and Serverless health app that turned Apple Watch and Fitbit heart-rate data into detailed reports for physicians, and contributed to its ISO 13485 certification. I finished as tech lead of four experienced engineers, owning the technical direction and scoping work directly with the client, on a React/NestJS app that helps insured patients find in-network care nearby; within a month of launch it had a few thousand monthly users and had replaced a costly call-center process. All of it HIPAA-regulated patient data on AWS (Docker, Terraform, CI/CD), monitored with CloudWatch and Grafana; as tech lead I carried the on-call pager and was accountable for uptime.",
+    desc: "Nearly four years at a medtech agency serving the US healthcare market, where I joined as a mid-level developer and worked my way up to tech lead. I started on ZUS Health, handling HL7/FHIR data in Go, then moved to its GraphQL service in TypeScript when the client pivoted. Later, as a senior fullstack dev, I shipped a React Native and Serverless health app that turned Apple Watch and Fitbit heart-rate data into detailed reports for physicians, and contributed to its ISO 13485 certification. I finished as tech lead of four experienced engineers, owning the technical direction and scoping work directly with the client, on a React/NestJS app that helps insured patients find in-network care nearby; within a month of launch it had a few thousand monthly users and had replaced a costly call-center process. All of it involved HIPAA-regulated patient data on AWS (Docker, Terraform, CI/CD), monitored with CloudWatch and Grafana; as tech lead I carried the on-call pager and was accountable for uptime.",
     tags: ["Go", "TypeScript", "NestJS", "React", "React Native", "FHIR/HL7", "HIPAA", "ISO 13485"],
   },
   {

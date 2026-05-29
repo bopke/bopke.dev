@@ -16,7 +16,7 @@ export default function Hero() {
       </h1>
       <p className="mt-9 max-w-[620px] text-[clamp(15px,1.8vw,18px)] leading-[1.7] text-muted print:text-[12pt]">
         I&apos;m <b className="text-foreground font-semibold">Michał Kubik</b>, a
-        fullstack engineer who spends most of his time in the backend. I build
+        fullstack engineer who spends most of his time on the backend. I build
         the APIs, data models and integrations behind{" "}
         <b className="text-foreground font-semibold">
           HIPAA healthcare and fintech
