@@ -96,8 +96,8 @@ const personJsonLd = {
     "AWS",
     "PostgreSQL",
     "Backend Development",
-    "Distributed Systems",
-    "System Design",
+    "Database Optimization",
+    "System Reliability",
   ],
   sameAs: [
     "https://github.com/bopke",

@@ -17,8 +17,7 @@ export default function About() {
           Most of my work is on the <b className={strong}>backend</b>: services,
           schemas, queues, and the integrations that hold everything together. I
           like the parts nobody sees:{" "}
-          <b className={strong}>the rewrite that cut a database bill by over
-          60%</b>, the heavy aggregation I moved behind a materialized view, the
+          the heavy aggregation I moved behind a materialized view, and the
           pipeline that catches a bug before it ships.
         </p>
         <p className={para}>
