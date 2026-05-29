@@ -45,7 +45,7 @@ export const timeline: (Role | Group)[] = [
     blurb: "A deliberate stint freelancing, taking on work outside the usual.",
     roles: [
       {
-        title: "Senior Backend Developer",
+        title: "Backend Developer",
         company: "Yumzi GmbH",
         when: "Jan 2026 - Apr 2026",
         desc: "Yumzi turns a restaurant's dishes into professional, print-ready menus with AI. As it gained traction, its quickly-built Express/JS backend started hitting its limits, so I migrated it to NestJS/TypeScript (rewiring the React frontend onto the new API) and rebuilt it for its thousands of daily users and hundreds of menus generated a day. I reworked the MongoDB schema and queries to cut database costs by over 60%, re-integrated its existing LLM features (AI menu generation and a support bot) into the new backend, and built automatic, context-aware menu translation with the same models (OpenAI, Anthropic, Grok). Stripe handled subscriptions, Cloudflare R2 stored menu images, and Workers managed uploads and offloaded heavier jobs from the main service. I set up its CI/CD pipeline and Sentry monitoring, and operated it in production.",

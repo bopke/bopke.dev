@@ -9,14 +9,14 @@ export default function Contact() {
         <span className="text-accent">worth building</span>.
       </h2>
       <p className="mt-[26px] max-w-[600px] text-[15px] leading-[1.7] text-muted">
-        I&apos;m open to{" "}
+        I&apos;m not actively looking, but I&apos;m open to the right{" "}
         <b className="text-foreground font-semibold">
-          backend and fullstack roles
+          backend or fullstack role
         </b>
-        , remote or on-site around Łódź, and comfortable working in{" "}
+        , remote or on-site around Łódź. I&apos;m comfortable working in{" "}
         <b className="text-foreground font-semibold">Polish</b> (native) or{" "}
-        <b className="text-foreground font-semibold">English</b> (C1). Email is
-        the quickest way to reach me, and I usually reply within a day or two.
+        <b className="text-foreground font-semibold">English</b> (C1), and email
+        is the quickest way to reach me.
       </p>
       <div className="flex flex-wrap gap-4 mt-11 print:hidden">
         <Button asChild variant="solid">
