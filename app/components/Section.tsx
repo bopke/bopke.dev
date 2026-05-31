@@ -26,7 +26,7 @@ export function Section({
     <section className={SECTION} id={id}>
       <div className={HEAD}>
         <div className="text-xs text-accent tracking-[0.1em]">{num}</div>
-        <h2 className="text-xl font-semibold mt-2 tracking-[-0.01em]">{title}</h2>
+        <h2 className="text-2xl font-semibold mt-2 tracking-[-0.01em]">{title}</h2>
         <p className="text-xs text-faint mt-[10px] leading-[1.6]">{sub}</p>
       </div>
       {children}

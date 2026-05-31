@@ -9,7 +9,7 @@ export default function Hero() {
       <p className="text-xs tracking-[0.28em] uppercase text-accent mb-[30px]">
         Fullstack Engineer · Łódź, Poland
       </p>
-      <h1 className="text-[clamp(46px,10vw,122px)] font-semibold leading-[0.95] tracking-[-0.04em] print:text-[40pt]">
+      <h1 className="text-[clamp(46px,10vw,122px)] font-semibold leading-[1.05] tracking-[-0.04em] print:text-[40pt]">
         Systems
         <br />
         that <em className="italic font-normal text-muted">hold up.</em>

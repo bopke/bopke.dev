@@ -136,7 +136,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     tag: "Open source · satire",
-    name: "conditionally-execute",
+    name: "Conditionally-execute",
     lead: "A joke about npm's micro-dependency habit.",
     body: (
       <>

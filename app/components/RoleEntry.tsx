@@ -14,7 +14,7 @@ export default function RoleEntry({
   tags,
 }: Role) {
   return (
-    <article className="group grid grid-cols-[1fr_auto] gap-x-6 gap-y-[6px] py-[26px] border-t border-border first:border-t-0 first:pt-0 print:break-inside-avoid">
+    <article className="grid grid-cols-[1fr_auto] gap-x-6 gap-y-[6px] py-[26px] border-t border-border first:border-t-0 first:pt-0 print:break-inside-avoid">
       <div>
         <h3 className="text-[19px] font-semibold tracking-[-0.01em]">{title}</h3>
         <div className="text-[13.5px] text-accent mt-[3px]">
@@ -29,21 +29,21 @@ export default function RoleEntry({
       <div className="text-[12.5px] text-faint text-right whitespace-nowrap max-[760px]:text-left max-[760px]:whitespace-normal">
         {when}
       </div>
-      <p className="col-span-full text-sm text-muted leading-[1.7] mt-3 max-w-[640px]">
-        {desc}
-      </p>
       {tags && tags.length > 0 && (
-        <div className="col-span-full flex flex-wrap gap-[7px] mt-[14px]">
+        <div className="col-span-full flex flex-wrap gap-[7px] mt-3">
           {tags.map((tag) => (
             <span
               key={tag}
-              className="text-[11px] tracking-[0.03em] text-faint border border-border rounded-full px-[11px] py-[3px] transition-colors duration-200 group-hover:border-[color-mix(in_oklab,var(--accent)_40%,var(--border))]"
+              className="text-[11px] tracking-[0.03em] text-faint border border-[color-mix(in_oklab,var(--accent)_40%,var(--border))] rounded-full px-[11px] py-[3px]"
             >
               {tag}
             </span>
           ))}
         </div>
       )}
+      <p className="col-span-full text-sm text-muted leading-[1.7] mt-3 max-w-[640px]">
+        {desc}
+      </p>
     </article>
   );
 }

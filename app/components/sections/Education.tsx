@@ -9,7 +9,7 @@ export default function Education() {
           title="Bachelor's degree, Information Technology"
           company="Technical University of Łódź"
           when="2017 - 2022"
-          desc="Thesis: using containers to isolate application runtime environments."
+          desc="Thesis: Using containers to isolate application runtime environments."
         />
       </div>
     </Section>
