@@ -129,11 +129,30 @@ export type Project = {
   name: string;
   lead: string;
   body: ReactNode;
-  href: string;
-  linkLabel: string;
+  links: { href: string; label: string }[];
 };
 
 export const projects: Project[] = [
+  {
+    tag: "Side project · AI",
+    name: "Taradiddle.news",
+    lead: "An AI newsroom that writes the news it just made up.",
+    body: (
+      <>
+        A satirical news site that runs itself. Topics come in from API,
+        or are made up on a schedule, then claude haiku screens them, and ones that
+        pass get handed to bigger models to be turned into full articles, with generated
+        hero image and the article translating itself into other
+        languages. Built with <em>Next.js</em> on Workers,{" "}
+        <em>D1</em> for data, <em>R2</em> for images, and <em>Queue</em>{" "}
+        coordinating the generation.
+      </>
+    ),
+    links: [
+      { href: "https://taradiddle.news", label: "Visit the site →" },
+      { href: "https://github.com/bopke/taradiddle.news", label: "See it on GitHub →" },
+    ],
+  },
   {
     tag: "Open source · satire",
     name: "Conditionally-execute",
@@ -148,7 +167,11 @@ export const projects: Project[] = [
         <code>is-odd</code>.
       </>
     ),
-    href: "https://github.com/bopke/conditionally-execute",
-    linkLabel: "Read it on GitHub →",
+    links: [
+      {
+        href: "https://github.com/bopke/conditionally-execute",
+        label: "Read it on GitHub →",
+      },
+    ],
   },
 ];

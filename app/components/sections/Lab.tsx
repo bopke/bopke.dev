@@ -8,7 +8,7 @@ export default function Lab() {
       id="project"
       num="05 -"
       title="From the Lab"
-      sub="Where I keep my sense of humour."
+      sub="See what I'm cooking."
     >
       <div className="flex flex-col gap-10">
         {projects.map((project) => (
