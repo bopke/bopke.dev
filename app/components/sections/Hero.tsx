@@ -35,10 +35,6 @@ export default function Hero() {
           {SITE.email}
         </a>
       </div>
-      <div className="inline-flex items-center gap-[9px] mt-[26px] text-[12.5px] tracking-[0.02em] text-muted border border-border rounded-full py-[7px] px-[15px]">
-        <span className="w-2 h-2 rounded-full bg-accent shadow-[0_0_10px_var(--accent)] animate-avail-pulse print:hidden" />
-        Open to the right backend/fullstack role
-      </div>
     </section>
   );
 }
