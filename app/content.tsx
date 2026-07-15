@@ -134,6 +134,27 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    tag: "Client work · Next.js",
+    name: "EasyBaby advisors",
+    lead: "A nationwide directory of babywearing-friendly specialists.",
+    body: (
+      <>
+        A public directory for EasyBaby, a Polish babywearing school, that helps
+        parents find friendly specialists - midwives, physiotherapists,
+        pediatricians and the like - near them. You browse by clicking a
+        region on an interactive map of Poland, and each listing shows who
+        recommended the specialist and whether EasyBaby has personally verified
+        them. Behind a Google-login admin panel the team manages the listings and
+        photos themselves. Built on Cloudflare: <em>Next.js</em> on Workers,{" "}
+        <em>D1</em> for the data and <em>R2</em> for the photos.
+      </>
+    ),
+    links: [
+      { href: "https://specjalisci.easybaby.pl", label: "Visit the site →" },
+      { href: "https://github.com/bopke/Easybaby-advisors", label: "See it on GitHub →" },
+    ],
+  },
+  {
     tag: "Side project · AI",
     name: "Taradiddle.news",
     lead: "An AI newsroom that writes the news it just made up.",
